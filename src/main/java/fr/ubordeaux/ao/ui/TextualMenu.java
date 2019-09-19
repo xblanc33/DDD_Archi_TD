@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 import fr.ubordeaux.ao.domain.Catalog;
 import fr.ubordeaux.ao.domain.Reference;
 import fr.ubordeaux.ao.domain.Price;
-import fr.ubordeaux.ao.infrastructure.inmemory.CatalogImpl;
+import fr.ubordeaux.ao.infrastructure.CatalogImpl;
 
 public class TextualMenu {
     private BufferedReader in;

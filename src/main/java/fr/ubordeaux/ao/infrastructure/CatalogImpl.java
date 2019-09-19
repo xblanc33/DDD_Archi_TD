@@ -1,4 +1,4 @@
-package fr.ubordeaux.ao.infrastructure.inmemory;
+package fr.ubordeaux.ao.infrastructure;
 
 import java.util.HashMap;
 import java.util.HashSet;

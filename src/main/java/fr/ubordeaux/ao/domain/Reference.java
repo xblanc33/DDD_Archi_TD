@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import fr.ubordeaux.ao.domain.ReferenceManagementException;
 import fr.ubordeaux.ao.domain.Price;
-import fr.ubordeaux.ao.infrastructure.inmemory.CatalogImpl;
+import fr.ubordeaux.ao.infrastructure.CatalogImpl;
 import fr.ubordeaux.ddd.annotations.classes.ValueObject;
 
 @ValueObject
