@@ -1,7 +1,7 @@
-package fr.ubordeaux.ao.domain.type;
+package fr.ubordeaux.ao.domain;
 
 import java.util.Objects;
-import fr.ubordeaux.ao.domain.exception.ReferenceManagementException;
+import fr.ubordeaux.ao.domain.ReferenceManagementException;
 import fr.ubordeaux.ddd.annotations.classes.ValueObject;
 import fr.ubordeaux.ddd.annotations.fields.Immutable;
 import fr.ubordeaux.ddd.annotations.methods.Getter;

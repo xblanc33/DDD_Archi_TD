@@ -5,15 +5,17 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import fr.ubordeaux.ao.domain.exception.ReferenceManagementException;
-import fr.ubordeaux.ao.domain.model.Catalog;
-import fr.ubordeaux.ao.domain.model.Reference;
+import fr.ubordeaux.ao.domain.ReferenceManagementException;
+import fr.ubordeaux.ao.domain.Catalog;
+import fr.ubordeaux.ao.domain.Reference;
+import fr.ubordeaux.ddd.annotations.classes.Repository;
 
+@Repository
 public class CatalogImpl implements Catalog {
     private Map<String, Reference> references;
 
     public CatalogImpl() {
-        Map<String, Reference> references = new HashMap<String, Reference>();
+        references = new HashMap<String, Reference>();
     }
 
     public int size() {

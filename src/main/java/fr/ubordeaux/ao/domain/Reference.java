@@ -1,11 +1,15 @@
-package fr.ubordeaux.ao.domain.model;
+package fr.ubordeaux.ao.domain;
 
 import java.util.Objects;
 
-import fr.ubordeaux.ao.domain.exception.ReferenceManagementException;
-import fr.ubordeaux.ao.domain.type.Price;
+import fr.ubordeaux.ao.domain.ReferenceManagementException;
+import fr.ubordeaux.ao.domain.Price;
+import fr.ubordeaux.ao.infrastructure.inmemory.CatalogImpl;
+import fr.ubordeaux.ddd.annotations.classes.ValueObject;
 
+@ValueObject
 public class Reference {
+    private CatalogImpl wrong;
     private String id;
     private String name;
     private String description;
@@ -16,6 +20,7 @@ public class Reference {
         this.setName(name);
         this.setDescription(description);
         this.setBasePrice(basePrice);
+        this.wrong = new CatalogImpl();
     }
 
     private void setReferenceId(String id) {
