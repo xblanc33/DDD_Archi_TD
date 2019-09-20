@@ -1,4 +1,4 @@
-package fr.ubordeaux.ao.domain;
+package fr.ubordeaux.ao.infrastructure;
 
 import java.util.Objects;
 import fr.ubordeaux.ao.domain.ReferenceManagementException;
@@ -10,7 +10,7 @@ import fr.ubordeaux.ddd.annotations.methods.Setter;
 @ValueObject
 public class Price {
     @Immutable
-    private int valueInEuroCents;
+    public int valueInEuroCents;
 
     public Price(int valueInEuroCents) {
         this.setPrice(valueInEuroCents);

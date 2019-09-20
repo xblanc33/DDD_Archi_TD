@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 
 import fr.ubordeaux.ao.domain.Catalog;
 import fr.ubordeaux.ao.domain.Reference;
-import fr.ubordeaux.ao.domain.Price;
+import fr.ubordeaux.ao.infrastructure.Price;
 import fr.ubordeaux.ao.infrastructure.CatalogImpl;
 
 public class TextualMenu {
@@ -30,7 +30,7 @@ public class TextualMenu {
     }
 
     private void initCollection() {
-        catalog = new CatalogImpl();
+        //catalog = new CatalogImpl();
     }
 
     protected void handleUserInstructions() throws IOException {

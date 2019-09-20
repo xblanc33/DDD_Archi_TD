@@ -59,28 +59,28 @@ compliance {
             // aggregate = 'fr.ubordeaux.ddd.annotations.classes.Aggregate'
             // entity = 'fr.ubordeaux.ddd.annotations.classes.Entity'
             // factory = 'fr.ubordeaux.ddd.annotations.classes.Factory'
-            // repository = 'fr.ubordeaux.ddd.annotations.classes.Repository'
+            repository = 'fr.ubordeaux.ddd.annotations.classes.Repository'
             // service = 'fr.ubordeaux.ddd.annotations.classes.Service'
-            // valueObject = 'fr.ubordeaux.ddd.annotations.classes.ValueObject'
+            valueObject = 'fr.ubordeaux.ddd.annotations.classes.ValueObject'
             areAnnotations = true
         }
     	fields {
             // entityId = 'fr.ubordeaux.ddd.annotations.fields.EntityID'
-            // immutable = 'fr.ubordeaux.ddd.annotations.fields.Immutable'
+            immutable = 'fr.ubordeaux.ddd.annotations.fields.Immutable'
             areAnnotations = true
         }
     	methods {
-            // getter = 'fr.ubordeaux.ddd.annotations.methods.Getter'
-            // setter = 'fr.ubordeaux.ddd.annotations.methods.Setter'
+            getter = 'fr.ubordeaux.ddd.annotations.methods.Getter'
+            setter = 'fr.ubordeaux.ddd.annotations.methods.Setter'
             areAnnotations = true
         }
     	packages {
             // anticorruption = 'fr.ubordeaux.ddd.annotations.packages.Anticorruption'
             // application = 'fr.ubordeaux.ddd.annotations.packages.Application'
-            // domain = 'fr.ubordeaux.ddd.annotations.packages.Domain'
-            // infrastructure = 'fr.ubordeaux.ddd.annotations.packages.Infrastructure'
+            domain = 'domain'
+            infrastructure = 'infrastructure'
             // presentation = 'fr.ubordeaux.ddd.annotations.packages.Presentation'
-            areAnnotations = true
+            areAnnotations = false
         }
     }
     rules = [
@@ -154,7 +154,7 @@ compliance {
         // 'valueObjectsMustNotAlsoBeRepositories',
         // 'valueObjectsMustNotAlsoBeServices',
         'valueObjectsMustHaveAtLeastOneField',
-        'valueObjectsMustOverrideEqualsMethodAccessingAllFields',
+        //'valueObjectsMustOverrideEqualsMethodAccessingAllFields',
         // 'valueObjectsMustOverrideHashCodeMethodAccessingAllFields',
         // 'valueObjectsMustOverrideToStringMethodAccessingAllFields',
         'valueObjectsFieldsMustBePrivate',

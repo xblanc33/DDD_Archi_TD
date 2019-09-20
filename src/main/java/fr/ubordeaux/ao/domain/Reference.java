@@ -3,7 +3,7 @@ package fr.ubordeaux.ao.domain;
 import java.util.Objects;
 
 import fr.ubordeaux.ao.domain.ReferenceManagementException;
-import fr.ubordeaux.ao.domain.Price;
+import fr.ubordeaux.ao.infrastructure.Price;
 import fr.ubordeaux.ao.infrastructure.CatalogImpl;
 import fr.ubordeaux.ddd.annotations.classes.ValueObject;
 
